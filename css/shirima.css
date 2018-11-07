@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+}
+
+.nav {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(66, 100, 116);
+    opacity: 0.6;
+    height: 80px;
+    align-items: center;
+    position: absolute;
+    padding-inline-end: 40px;
+    border-radius: 20px;
+}
+
+.menu {
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px black;
+    font-size: 150%;
+}
+
+li {
+    display: inline;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.head {
+    width: 1fr;
+    height: 800px;
+    background-image: url('../images/Banniere_sans_logo0.png');
+    background-position: 40% -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li:hover {
+    background-color: rgb(71, 114, 134);
+    filter: drop-shadow(10px 10px 4px rgb(0, 0, 0));
+}
+
+p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+    opacity: 0.6;
+}
+
+.logo1:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+
+.logo2:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+
+.logo3:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+
+.logo1 {
+    position: absolute;
+    right: 600px;
+    top: 250px;
+    transition: ease-in-out 1s;
+}
+
+.logo2 {
+    position: absolute;
+    right: 450px;
+    top: 350px;
+    transition: ease-in-out 1s;
+}
+
+.logo3 {
+    position: absolute;
+    right: 300px;
+    top: 450px;
+    transition: ease-in-out 1s;
+}

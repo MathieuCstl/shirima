@@ -2,11 +2,16 @@ body {
     background-color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav {
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 nav {
@@ -88,4 +93,60 @@ p {
     right: 300px;
     top: 450px;
     transition: ease-in-out 1s;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top: solid;
+    border-bottom: solid;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    background-color: rgb(66, 100, 116);
+    height: 60px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.twitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+.stream {
+    height: 504px;
+    width: 800px;
+}
+
+.progra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0 300px 0 300px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1700px;
+    flex-flow: column wrap;
+}
+
+.fleche {
+    position: absolute;
+    right: 725px;
+    top: 650px;
+    opacity: 0.6;
 }

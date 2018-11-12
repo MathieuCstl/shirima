@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 a {
@@ -63,15 +63,18 @@ p {
 }
 
 .logo1:hover {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 1em #ffffff);
 }
 
 .logo2:hover {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 1em #ffffff);
 }
 
 .logo3:hover {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 1em #ffffff);
 }
 
 .logo1 {

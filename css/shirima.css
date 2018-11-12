@@ -121,6 +121,11 @@ h1 {
     width: 800px;
 }
 
+.lien {
+    display: flex;
+    justify-content: center;
+}
+
 .progra {
     display: flex;
     justify-content: center;
@@ -140,8 +145,19 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1700px;
-    flex-flow: column wrap;
+    height: 1000px;
+    flex-direction: column;
+}
+
+.video a {
+    background-color:rgb(66, 100, 116);
+    border-radius: 20px; 
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+.video a:hover {
+    transform: scale(1.2);
 }
 
 .fleche {

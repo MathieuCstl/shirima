@@ -39,6 +39,10 @@ li {
     border-radius: 20px;
 }
 
+.liens li:hover {
+    background-color: black;
+}
+
 .head {
     width: 1fr;
     height: 800px;
@@ -64,38 +68,38 @@ p {
 
 .logo1:hover {
     transform: scale(1.25);
-    filter: drop-shadow(0 0 1em #ffffff);
+    filter: drop-shadow(0 0 0.5em #ffffff);
 }
 
 .logo2:hover {
     transform: scale(1.25);
-    filter: drop-shadow(0 0 1em #ffffff);
+    filter: drop-shadow(0 0 0.5em #ffffff);
 }
 
 .logo3:hover {
     transform: scale(1.25);
-    filter: drop-shadow(0 0 1em #ffffff);
+    filter: drop-shadow(0 0 0.5em #ffffff);
 }
 
 .logo1 {
     position: absolute;
     right: 600px;
     top: 250px;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
 }
 
 .logo2 {
     position: absolute;
     right: 450px;
     top: 350px;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
 }
 
 .logo3 {
     position: absolute;
     right: 300px;
     top: 450px;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
 }
 
 h1 {
@@ -124,7 +128,7 @@ h1 {
     width: 800px;
 }
 
-.lien {
+.liens {
     display: flex;
     justify-content: center;
 }
@@ -157,10 +161,13 @@ h1 {
     border-radius: 20px; 
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    transition: ease-in-out 0.5s;
 }
 
 .video a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    border: solid #ffffff79;
 }
 
 .fleche {
@@ -168,4 +175,16 @@ h1 {
     right: 725px;
     top: 650px;
     opacity: 0.6;
+}
+
+@media screen and (max-width: 830px) {
+    .nav a {
+        display: none;
+    }
+    nav {
+        background-color: transparent;
+    }
+    .logo {
+        display: none;
+    }
 }

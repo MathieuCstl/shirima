@@ -144,7 +144,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     padding: 0 300px 0 300px;
 }
 
@@ -184,7 +183,24 @@ h1 {
     nav {
         background-color: transparent;
     }
-    .logo {
+    .head {
         display: none;
+    }
+    .bio {
+        padding: 0;
+    }
+    .stream {
+        width: 1fr;
+    }
+    .chat {
+        display: none;
+    }
+    .progra img {
+        width: 1fr; 
+        /* ça marche paaaaaaaas */
+    }
+    .video iframe {
+        width: 1fr;
+        /* ça marche paaaaaaaas */
     }
 }

@@ -22,7 +22,8 @@ nav {
     height: 80px;
     align-items: center;
     position: absolute;
-    padding-inline-end: 40px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
     border-radius: 20px;
 }
 
@@ -33,7 +34,7 @@ nav {
     font-size: 150%;
 }
 
-.nav li {
+.nav .menu {
     display: inline;
     padding: 15px;
     border-radius: 20px;
@@ -48,7 +49,7 @@ nav {
     background-size: cover;
 }
 
-.nav li:hover {
+.nav .menu:hover {
     background-color: rgb(71, 114, 134);
     filter: drop-shadow(10px 10px 4px rgb(0, 0, 0));
 }
@@ -123,9 +124,11 @@ h1 {
     width: 800px;
 }
 
-.liens li {
-    display: inline;
-    margin-left: 20px
+.liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap; 
 }
 
 .progra {
@@ -156,7 +159,7 @@ h1 {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.1s;
 }
 
 .video a:hover {
@@ -175,7 +178,7 @@ h1 {
     .nav {
         font-size: 80%;
     }
-    .nav li {
+    .nav .menu {
         padding: 0;
     }
     .bio {
@@ -187,7 +190,7 @@ h1 {
     .chat {
         display: none;
     }
-    .liens li a {
+    .liens a {
         display: flex;
         justify-content: center;
         margin: 0%;
@@ -195,7 +198,7 @@ h1 {
 }
 @media screen and (max-width: 620px) {
     .head {
-        background-position: -300px;
+        background-position: -365px -100px;
     }
     .nav {
         display: none;

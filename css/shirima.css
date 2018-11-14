@@ -54,9 +54,10 @@ nav {
     filter: drop-shadow(10px 10px 4px rgb(0, 0, 0));
 }
 
-p {
+.bio p, .video p {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+    font-size: 125%;
 }
 
 .logo {
@@ -113,7 +114,7 @@ h2 {
     border-bottom: solid;
     opacity: 0.6;
     background-color: rgb(66, 100, 116);
-    height: 60px;
+    height: 40px;
     text-shadow: 5px 5px 5px black;
 }
 
@@ -159,8 +160,8 @@ h2 {
 }
 
 .video a {
-    background-color:rgb(66, 100, 116);
-    border-radius: 20px; 
+    background-color:#283c46;
+    border-radius: 20px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
@@ -172,11 +173,35 @@ h2 {
     border: solid #ffffff79;
 }
 
-.fleche {
-    position: absolute;
-    right: 725px;
-    top: 650px;
-    opacity: 0.6;
+.contact p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 125%;
+}
+
+footer p {
+    text-align: start; 
+    color: rgb(0, 0, 0);
+    margin: 2px;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #283c46;
+    border-top: solid #ffffff80;
+    height: 70px;
 }
 
 @media screen and (max-width: 960px) {
@@ -237,6 +262,7 @@ h2 {
     }
     .logo {
         transform: scale(0.7);
+        padding-right: 0;
     }
 }
 @media screen and (min-width: 1500px) {

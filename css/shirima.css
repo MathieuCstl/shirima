@@ -112,8 +112,7 @@ h2 {
     color: white;
     border-top: solid;
     border-bottom: solid;
-    opacity: 0.6;
-    background-color: rgb(66, 100, 116);
+    background-color: #283c46;
     height: 40px;
     text-shadow: 5px 5px 5px black;
 }
@@ -173,10 +172,24 @@ h2 {
     border: solid #ffffff79;
 }
 
+.contact {
+    margin: 50px;
+    padding: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 50px;
+    background-color: #283c46;
+}
+
 .contact p {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: 125%;
+}
+
+.contact a:hover {
+    text-decoration: underline overline;
+    color: black;
 }
 
 footer p {
@@ -230,6 +243,10 @@ footer {
         justify-content: center;
         margin: 0%;
     }
+    .contact {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
 }
 @media screen and (max-width: 620px) {
     .head {
@@ -263,6 +280,10 @@ footer {
     .logo {
         transform: scale(0.7);
         padding-right: 0;
+    }
+    .contact {
+        margin-left: 150px;
+        margin-right: 150px;
     }
 }
 @media screen and (min-width: 1500px) {

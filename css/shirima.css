@@ -22,8 +22,8 @@ nav {
     height: 80px;
     align-items: center;
     position: absolute;
-    padding-inline-end: 20px;
-    padding-inline-start: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-radius: 20px;
 }
 
@@ -41,7 +41,7 @@ nav {
 }
 
 .head {
-    width: 1fr;
+    width: 100%;
     height: 800px;
     background-image: url('../images/Banniere_sans_logo0.png');
     background-position: 40% -100px;
@@ -112,9 +112,10 @@ h2 {
     color: white;
     border-top: solid;
     border-bottom: solid;
-    background-color: #283c46;
+    background-color: rgb(66, 100, 116);
     height: 40px;
     text-shadow: 5px 5px 5px black;
+    opacity: 0.6;
 }
 
 .twitch {
@@ -161,15 +162,14 @@ h2 {
 .video a {
     background-color:#283c46;
     border-radius: 20px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     transition: ease-in-out 0.1s;
 }
 
 .video a:hover {
-    transform: scale(1.1);
-    border: solid #ffffff79;
+    border: solid #999999;
 }
 
 .contact {
@@ -185,6 +185,7 @@ h2 {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: 125%;
+    text-shadow: 5px 5px 5px black;
 }
 
 .contact a:hover {
@@ -213,8 +214,13 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #283c46;
-    border-top: solid #ffffff80;
+    border-top: solid #ffffff;
+    opacity: 0.8;
     height: 70px;
+}
+
+iframe {
+    border: none;
 }
 
 @media screen and (max-width: 960px) {
